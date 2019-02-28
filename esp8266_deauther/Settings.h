@@ -10,7 +10,7 @@ extern "C" {
 #include "language.h"
 #include "A_config.h"
 
-#define VERSION "v2.1.0"
+#define VERSION "v2.1.1"
 
 extern void checkFile(String path, String data);
 extern JsonVariant parseJSONFile(String path, DynamicJsonBuffer& jsonBuffer);
@@ -112,7 +112,7 @@ class Settings {
         bool ledEnabled       = true;
         bool serialEcho       = true;
 
-        uint32_t attackTimeout    = 600;
+        uint32_t attackTimeout    = 0;
         uint32_t autosaveTime     = 10000;
         uint32_t displayTimeout   = 600;
         uint16_t deauthsPerTarget = 20;
@@ -125,7 +125,7 @@ class Settings {
         uint8_t* macAP;
         uint8_t probesPerSSID = 1;
 
-        String ssid        = "pwned";
+        String ssid        = "ObiLan Kenobi";
         String password    = "deauther";
         bool hidden        = false;
         bool captivePortal = true;
